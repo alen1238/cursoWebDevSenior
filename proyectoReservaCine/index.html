@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
   <title>Reserva de Asientos - Cine</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -13,7 +12,7 @@
 
   <main>
     <!-- Formulario de reserva -->
-    <form id="reservaForm" method="POST" action="http://localhost:8080/cine/reservar">
+    <form id="reservaForm" method="POST">
       <div class="form-group">
         <label for="nombre">Nombre completo:</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -28,7 +27,7 @@
         <label for="pelicula">Película:</label>
         <select id="pelicula" name="pelicula" required>
           <option value="">Seleccione una opción</option>
-          <option value="Dune 2">Dune 2</option>
+          <option value="Dune 2">Dune 3</option>
           <option value="Oppenheimer">Oppenheimer</option>
           <option value="Barbie">Barbie</option>
         </select>
@@ -55,6 +54,9 @@
   <footer>
     <p>Proyecto educativo - Programación Web</p>
   </footer>
+
+  <button>enviar</button>
+  <p style="margin: 16px;">párrafo de prueba</p>
 
   <script src="js/script.js">
 
