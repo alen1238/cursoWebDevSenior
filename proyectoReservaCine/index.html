@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva de Asientos - Cine</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cine Estelar</h1>
+    <p>Reserva tu asiento para la función</p>
+  </header>
+
+  <main>
+    <!-- Formulario de reserva -->
+    <form id="reservaForm" method="POST" action="http://localhost:8080/cine/reservar">
+      <div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pelicula">Película:</label>
+        <select id="pelicula" name="pelicula" required>
+          <option value="">Seleccione una opción</option>
+          <option value="Dune 2">Dune 2</option>
+          <option value="Oppenheimer">Oppenheimer</option>
+          <option value="Barbie">Barbie</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Selecciona tu asiento:</label>
+        <div class="sala" id="sala">
+          <!-- Asientos generados con JS -->
+        </div>
+        <input type="hidden" id="asientoSeleccionado" name="asiento">
+      </div>
+
+      <button type="submit">Reservar</button>
+    </form>
+
+    <!-- Resumen previo -->
+    <section id="resumen" class="oculto">
+      <h2>Resumen de tu reserva</h2>
+      <p id="detalle"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto educativo - Programación Web</p>
+  </footer>
+
+  <script src="js/script.js">
+
+  </script>
+</body>
+</html>
