@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // LLamamos a los elementos del documento
   const sala = document.getElementById("sala");
   const asientoInput = document.getElementById("asientoSeleccionado");
   const form = document.getElementById("reservaForm");
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (asientoInput.value === "") {
       alert("Debes seleccionar un asiento.");
-      return;
+      return; //aqui finaliza la funcion
     }
 
     const nombre = document.getElementById("nombre").value;
